@@ -17,3 +17,8 @@ Route::get('/', function()
 });
 
 Route::controller('admin/vendors' , 'VendorsController');
+
+Route::get('products', function()
+{
+	return View::make('products.index');
+});
