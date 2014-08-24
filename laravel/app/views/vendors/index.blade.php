@@ -21,6 +21,38 @@
 			{{ Form::label('firstname') }}
 			{{ Form::text('firstname') }}
 		</p>
+		<p>
+			{{ Form::label('lastname') }}
+			{{ Form::text('lastname') }}
+		</p>
+		<p>
+			{{ Form::label('username') }}
+			{{ Form::text('username') }}
+		</p>
+		<p>
+			{{ Form::label('password') }}
+			{{ Form::password('password') }}
+		</p>
+		<p>
+			{{ Form::label('address') }}
+			{{ Form::textarea('address') }}
+		</p>
+		<p>
+			{{ Form::label('email') }}
+			{{ Form::text('email') }}
+		</p>
+		<p>
+			{{ Form::label('primary phone') }}
+			{{ Form::text('phone') }}
+		</p>
+		<p>
+			{{ Form::label('secondary phone') }}
+			{{ Form::text('phone2') }}
+		</p>
+		<p>
+			{{ Form::label('delivery options') }}
+			{{ Form::text('delivery options') }}
+		</p>
 		{{ Form::submit('Submit',array('class'=>'btn')) }}
 		{{ Form::close() }}
 	</div><!-- end admin -->

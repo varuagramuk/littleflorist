@@ -32,5 +32,5 @@
 	</div> <!-- end wrapper -->
 	{{ HTML::script('js/jquery-1.8.3.js') }}
 	{{ HTML::script('js/jquery.jgrowl.js') }}
-	{{ HTML::script('js/validate.min.js') }}
+	{{ HTML::script('js/jquery.validate.min.js') }}
 </body>
