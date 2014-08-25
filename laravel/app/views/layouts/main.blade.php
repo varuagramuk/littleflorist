@@ -12,7 +12,28 @@
 	<div id='wrapper'>
 		<header>
 			<section id='top-panel'>
-				
+				<menu>	
+					@if(Auth::check())
+						<li>{{ HTML::link('users/signout','Sign Out') }}</li>
+						@if($vendor)
+							<li>Add Product</li>
+							<li>My Account</li>
+							<li>Orders</li>
+						@endif
+						@if($super)
+							<li>Vendor list</li>
+							<li>Products list</li>
+							<li>Add Product</li>
+							<li>Add Categories</li>
+						@endif
+					@else
+						<li>{{ HTML::link('users/signin','Sign In') }}</li>
+						<li>{{ HTML::link('users/newaccount','Sign Up') }}</li>
+
+					@endif
+
+					
+				</menu>
 			</section> <!-- end top panel -->
 		</header>
 		<section id='main-content' class='clearfix'>

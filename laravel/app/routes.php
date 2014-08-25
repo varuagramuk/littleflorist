@@ -11,14 +11,13 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', array('uses'=>'HomeController@getIndex'));
 
-Route::controller('admin/vendors' , 'VendorsController');
+// Route::controller('admin/vendors' , 'VendorsController');
 
 Route::get('products', function()
 {
 	return View::make('products.index');
 });
+
+Route::controller('users' , 'UsersController');
